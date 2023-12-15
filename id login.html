@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            background-color:rgb(224, 47, 171);
+            
+            
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+        }
+        .container{
+            background-color: white;
+            border: 2px solid white;
+            width: 300px;
+            text-align: center;
+            height: 500px;
+            justify-content: center;
+            display: flex;
+            flex-direction:column;
+            
+            padding: 1rem 3rem;
+            border-radius: .5rem;
+            top: 50px;
+        }
+       
+            
+        
+        .container form{
+            display: flex;
+            flex-direction: column;
+            flex: 10px;
+            position: relative;
+            
+        }
+        .container h3 {
+            font-size: 2rem;
+            margin: 1.5rem;
+        }
+        .container form input{
+            font-weight: lighter;
+            border: none;
+        }
+        input:focus{
+            outline: none;
+
+        }
+        .container form .username{
+            margin-bottom: .7rem;
+        }
+        .container form i{
+            font-size: 1rem;
+            margin-right: 0.5rem;
+        }
+        .container form input{
+            font-size: 1rem;
+        }
+        .inputarea{
+            margin-bottom: .7rem;
+
+        }
+        .flexul img{
+            height: 30px;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        button{
+            background-color: palevioletred;
+            color: purple;
+            border: 1.7rem;
+        }
+        span{
+            display: inline-block;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+        span:hover ,span:active{
+            text-decoration: underline;
+            color:grey;
+        }
+        #signup:hover ,#signup:active{
+            text-decoration: underline;
+            color:grey;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <h3 class="t-center">Login </h3>
+    
+    <div class="inputarea">
+        
+        <label for="name" class="username">USERNAME</label>
+        <input type="text" name="name" id="name" placeholder="Enter your username">
+        </div>
+        <hr>
+        
+        <div class="inputarea">
+        <label for="password" class="username">PASSWORD</label>
+        <input type="password" name="password" placeholder="type your password">
+        </div>
+        <hr>
+        
+        <span class="forgot password">Forgot password?</span>
+        
+        <button class="btn">LOGIN</button>
+        <div class="formbotom">
+            <p>or sign up using</p>
+        <ul class="flexul">
+        <a href="https://www.facebook.com"target="__blank">
+            ♾
+        </a>
+        <a href="https://www.twitter.com" target="__blank">
+            🐱‍💻
+            </a>
+        <a href="https://www.google.com" target="__blank">🔀
+            </a>
+            
+        </ul>
+        <p class="signup">or sign up using</p>
+        <p id="signup">SIGN UP</p>
+       
+        </div>
+        
+
+    
+    </div>
+</body>
+</html>
